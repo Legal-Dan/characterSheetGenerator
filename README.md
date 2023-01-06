@@ -1,0 +1,7 @@
+# CharacterSheetGenerator
+
+## Package
+```
+./gradlew distZip
+```
+
