@@ -20,11 +20,8 @@ import org.http4k.template.HandlebarsTemplates
 import org.http4k.template.viewModel
 
 val app: HttpHandler = routes(
-    "/ping" bind GET to {
-        Response(OK).body("pong")
-    },
 
-    "/templates/handlebars" bind GET to {
+    "/" bind GET to {
         val renderer = HandlebarsTemplates().CachingClasspath()
         val view = Body.viewModel(renderer, TEXT_HTML).toLens()
         val viewModel = HandlebarsViewModel("Hello there!")
