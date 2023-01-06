@@ -19,8 +19,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+        server-id: sonatype-nexus-staging # Value of the distributionManagement/repository/id field of the pom.xml
+        settings-path: ${{ /Users/dct5743/.m2/settings.xml }} # location for the settings.xml file
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
@@ -34,5 +34,5 @@ jobs:
       with:
         arguments: publish
       env:
-        USERNAME: ${{ github.actor }}
+        USERNAME: ${{ Legal-Dan }}
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
