@@ -35,6 +35,7 @@ test {
 dependencies {
     implementation "org.http4k:http4k-core:${http4kVersion}"
     implementation "org.http4k:http4k-template-handlebars:${http4kVersion}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     implementation "ch.qos.logback:logback-classic:1.4.5"
     testImplementation "org.http4k:http4k-testing-approval:${http4kVersion}"
