@@ -1,7 +1,7 @@
 # Compiled class file
 *.class
 .gradle
-gradle
+/build/
 # Log file
 *.log
 
@@ -27,3 +27,5 @@ Footer
 Footer navigation
 Terms
 /secrets.kt
+/.gradle/
+/.gradle/7.6/checksums/
