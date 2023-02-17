@@ -16,7 +16,7 @@ plugins {
     id "application"
 }
 
-mainClassName = "com.main.CharacterSheetGeneratorKt"
+mainClassName = "src.main.kotlin.com.main.MainKt"
 
 repositories {
     mavenCentral()
