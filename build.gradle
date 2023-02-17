@@ -16,7 +16,7 @@ plugins {
     id "application"
 }
 
-mainClassName = "src.main.kotlin.com.main.MainKt"
+mainClassName = "src.main.kotlin.com.main.Main"
 
 repositories {
     mavenCentral()
